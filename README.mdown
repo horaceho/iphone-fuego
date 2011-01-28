@@ -1,0 +1,21 @@
+iphone-fuego
+============
+
+iphone-fuego is a port of [fuego][1] on iPhone.
+
+Howto
+-----
+
+   * please follow [Semmel’s blog][2] to build the boost library to an iPhone framework
+   * download the iphone-fuego xcode project
+   * add the boost.framework to the iPhone project
+   * compile
+
+Build Requirements
+------------------
+
+Mac OS X 10.6, Xcode 3.2.5, iOS 4.2 
+
+
+[1]: http://fuego.sourceforge.net/ "fuego"
+[2]: http://semmel.wordpress.com/2011/01/18/boost-c-libraries-with-ios/ "Semmel’s blog"

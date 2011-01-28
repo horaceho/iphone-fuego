@@ -1,0 +1,1023 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623260D0F684500981E51 /* GoAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* GoAppDelegate.mm */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		AA51CB2D12F2F6F500D828EF /* boost.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA51CB2C12F2F6F500D828EF /* boost.framework */; };
+		AA5B0F8E12F2E99B001AE917 /* FuegoMainEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0BEC12F2E99A001AE917 /* FuegoMainEngine.cpp */; };
+		AA5B0F8F12F2E99B001AE917 /* FuegoMainUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0BEE12F2E99A001AE917 /* FuegoMainUtil.cpp */; };
+		AA5B0F9612F2E99B001AE917 /* GoAutoBook.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0BFA12F2E99A001AE917 /* GoAutoBook.cpp */; };
+		AA5B0F9712F2E99B001AE917 /* GoBensonSolver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0BFC12F2E99A001AE917 /* GoBensonSolver.cpp */; };
+		AA5B0F9812F2E99B001AE917 /* GoBlock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0BFE12F2E99A001AE917 /* GoBlock.cpp */; };
+		AA5B0F9912F2E99B001AE917 /* GoBoard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0C0012F2E99A001AE917 /* GoBoard.cpp */; };
+		AA5B0F9A12F2E99B001AE917 /* GoBoardCheckPerformance.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0C0212F2E99A001AE917 /* GoBoardCheckPerformance.cpp */; };
+		AA5B0F9B12F2E99B001AE917 /* GoBoardHistory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0C0412F2E99A001AE917 /* GoBoardHistory.cpp */; };
+		AA5B0F9C12F2E99B001AE917 /* GoBoardRestorer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0C0612F2E99A001AE917 /* GoBoardRestorer.cpp */; };
+		AA5B0F9D12F2E99B001AE917 /* GoBoardSynchronizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0C0812F2E99A001AE917 /* GoBoardSynchronizer.cpp */; };
+		AA5B0F9E12F2E99B001AE917 /* GoBoardUpdater.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0C0A12F2E99A001AE917 /* GoBoardUpdater.cpp */; };
+		AA5B0F9F12F2E99B001AE917 /* GoBoardUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0C0C12F2E99A001AE917 /* GoBoardUtil.cpp */; };
+		AA5B0FA012F2E99B001AE917 /* GoBook.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0C0E12F2E99A001AE917 /* GoBook.cpp */; };
+		AA5B0FA112F2E99B001AE917 /* GoChain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0C1012F2E99A001AE917 /* GoChain.cpp */; };
+		AA5B0FA212F2E99B001AE917 /* GoEyeCount.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0C1212F2E99A001AE917 /* GoEyeCount.cpp */; };
+		AA5B0FA312F2E99B001AE917 /* GoEyeUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0C1412F2E99A001AE917 /* GoEyeUtil.cpp */; };
+		AA5B0FA412F2E99B001AE917 /* GoGame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0C1612F2E99A001AE917 /* GoGame.cpp */; };
+		AA5B0FA512F2E99B001AE917 /* GoGtpCommandUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0C1812F2E99A001AE917 /* GoGtpCommandUtil.cpp */; };
+		AA5B0FA612F2E99B001AE917 /* GoGtpEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0C1A12F2E99A001AE917 /* GoGtpEngine.cpp */; };
+		AA5B0FA712F2E99B001AE917 /* GoGtpExtraCommands.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0C1C12F2E99A001AE917 /* GoGtpExtraCommands.cpp */; };
+		AA5B0FA812F2E99B001AE917 /* GoInfluence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0C1E12F2E99A001AE917 /* GoInfluence.cpp */; };
+		AA5B0FA912F2E99B001AE917 /* GoInit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0C2012F2E99A001AE917 /* GoInit.cpp */; };
+		AA5B0FAA12F2E99B001AE917 /* GoKomi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0C2212F2E99A001AE917 /* GoKomi.cpp */; };
+		AA5B0FAB12F2E99B001AE917 /* GoLadder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0C2412F2E99A001AE917 /* GoLadder.cpp */; };
+		AA5B0FAC12F2E99B001AE917 /* GoMotive.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0C2712F2E99A001AE917 /* GoMotive.cpp */; };
+		AA5B0FAD12F2E99B001AE917 /* GoNodeUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0C2A12F2E99A001AE917 /* GoNodeUtil.cpp */; };
+		AA5B0FAE12F2E99B001AE917 /* GoPlayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0C2C12F2E99A001AE917 /* GoPlayer.cpp */; };
+		AA5B0FAF12F2E99B001AE917 /* GoPlayerMove.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0C2E12F2E99A001AE917 /* GoPlayerMove.cpp */; };
+		AA5B0FB012F2E99B001AE917 /* GoRegion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0C3012F2E99A001AE917 /* GoRegion.cpp */; };
+		AA5B0FB112F2E99B001AE917 /* GoRegionBoard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0C3212F2E99A001AE917 /* GoRegionBoard.cpp */; };
+		AA5B0FB212F2E99B001AE917 /* GoRegionUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0C3412F2E99A001AE917 /* GoRegionUtil.cpp */; };
+		AA5B0FB312F2E99B001AE917 /* GoRules.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0C3612F2E99A001AE917 /* GoRules.cpp */; };
+		AA5B0FB412F2E99B001AE917 /* GoSafetyCommands.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0C3812F2E99A001AE917 /* GoSafetyCommands.cpp */; };
+		AA5B0FB512F2E99B001AE917 /* GoSafetySolver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0C3A12F2E99A001AE917 /* GoSafetySolver.cpp */; };
+		AA5B0FB612F2E99B001AE917 /* GoSafetyUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0C3C12F2E99A001AE917 /* GoSafetyUtil.cpp */; };
+		AA5B0FB712F2E99B001AE917 /* GoSearch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0C3E12F2E99A001AE917 /* GoSearch.cpp */; };
+		AA5B0FB812F2E99B001AE917 /* GoSetupUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0C4112F2E99A001AE917 /* GoSetupUtil.cpp */; };
+		AA5B0FB912F2E99B001AE917 /* GoStaticLadder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0C4412F2E99A001AE917 /* GoStaticLadder.cpp */; };
+		AA5B0FBA12F2E99B001AE917 /* GoStaticSafetySolver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0C4612F2E99A001AE917 /* GoStaticSafetySolver.cpp */; };
+		AA5B0FBB12F2E99B001AE917 /* GoTimeControl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0C4812F2E99A001AE917 /* GoTimeControl.cpp */; };
+		AA5B0FBC12F2E99B001AE917 /* GoTimeSettings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0C4A12F2E99A001AE917 /* GoTimeSettings.cpp */; };
+		AA5B0FBD12F2E99B001AE917 /* GoUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0C4C12F2E99A001AE917 /* GoUtil.cpp */; };
+		AA5B0FD112F2E99B001AE917 /* GoUctBoard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0C6312F2E99A001AE917 /* GoUctBoard.cpp */; };
+		AA5B0FD212F2E99B001AE917 /* GoUctCommands.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0C6712F2E99A001AE917 /* GoUctCommands.cpp */; };
+		AA5B0FD312F2E99B001AE917 /* GoUctDefaultPriorKnowledge.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0C6912F2E99A001AE917 /* GoUctDefaultPriorKnowledge.cpp */; };
+		AA5B0FD412F2E99B001AE917 /* GoUctDefaultRootFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0C6B12F2E99A001AE917 /* GoUctDefaultRootFilter.cpp */; };
+		AA5B0FD512F2E99B001AE917 /* GoUctEstimatorStat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0C6D12F2E99A001AE917 /* GoUctEstimatorStat.cpp */; };
+		AA5B0FD612F2E99B001AE917 /* GoUctGlobalSearch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0C6F12F2E99A001AE917 /* GoUctGlobalSearch.cpp */; };
+		AA5B0FD712F2E99B001AE917 /* GoUctObjectWithSearch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0C7112F2E99A001AE917 /* GoUctObjectWithSearch.cpp */; };
+		AA5B0FD812F2E99B001AE917 /* GoUctPlayoutPolicy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0C7512F2E99A001AE917 /* GoUctPlayoutPolicy.cpp */; };
+		AA5B0FD912F2E99B001AE917 /* GoUctRootFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0C7812F2E99A001AE917 /* GoUctRootFilter.cpp */; };
+		AA5B0FDA12F2E99B001AE917 /* GoUctSearch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0C7A12F2E99A001AE917 /* GoUctSearch.cpp */; };
+		AA5B0FDB12F2E99B001AE917 /* GoUctUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0C7C12F2E99A001AE917 /* GoUctUtil.cpp */; };
+		AA5B0FE012F2E99B001AE917 /* GtpEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0C8412F2E99A001AE917 /* GtpEngine.cpp */; };
+		AA5B0FE112F2E99B001AE917 /* GtpInputStream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0C8612F2E99A001AE917 /* GtpInputStream.cpp */; };
+		AA5B0FE212F2E99B001AE917 /* GtpOutputStream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0C8812F2E99A001AE917 /* GtpOutputStream.cpp */; };
+		AA5B11B812F2E99B001AE917 /* SgBoardConst.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0EAF12F2E99B001AE917 /* SgBoardConst.cpp */; };
+		AA5B11B912F2E99B001AE917 /* SgBookBuilder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0EB112F2E99B001AE917 /* SgBookBuilder.cpp */; };
+		AA5B11BA12F2E99B001AE917 /* SgCmdLineOpt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0EB512F2E99B001AE917 /* SgCmdLineOpt.cpp */; };
+		AA5B11BB12F2E99B001AE917 /* SgConnCompIterator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0EB712F2E99B001AE917 /* SgConnCompIterator.cpp */; };
+		AA5B11BC12F2E99B001AE917 /* SgDebug.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0EB912F2E99B001AE917 /* SgDebug.cpp */; };
+		AA5B11BD12F2E99B001AE917 /* SgEvaluatedMoves.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0EBC12F2E99B001AE917 /* SgEvaluatedMoves.cpp */; };
+		AA5B11BE12F2E99B001AE917 /* SgException.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0EBE12F2E99B001AE917 /* SgException.cpp */; };
+		AA5B11BF12F2E99B001AE917 /* SgFastLog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0EC012F2E99B001AE917 /* SgFastLog.cpp */; };
+		AA5B11C012F2E99B001AE917 /* SgGameReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0EC212F2E99B001AE917 /* SgGameReader.cpp */; };
+		AA5B11C112F2E99B001AE917 /* SgGameWriter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0EC412F2E99B001AE917 /* SgGameWriter.cpp */; };
+		AA5B11C212F2E99B001AE917 /* SgGtpClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0EC612F2E99B001AE917 /* SgGtpClient.cpp */; };
+		AA5B11C312F2E99B001AE917 /* SgGtpCommands.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0EC812F2E99B001AE917 /* SgGtpCommands.cpp */; };
+		AA5B11C412F2E99B001AE917 /* SgGtpUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0ECA12F2E99B001AE917 /* SgGtpUtil.cpp */; };
+		AA5B11C512F2E99B001AE917 /* SgIncrementalStack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0ECE12F2E99B001AE917 /* SgIncrementalStack.cpp */; };
+		AA5B11C612F2E99B001AE917 /* SgInit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0ED012F2E99B001AE917 /* SgInit.cpp */; };
+		AA5B11C712F2E99B001AE917 /* SgMemCheck.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0ED412F2E99B001AE917 /* SgMemCheck.cpp */; };
+		AA5B11C812F2E99B001AE917 /* SgMiaiMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0ED612F2E99B001AE917 /* SgMiaiMap.cpp */; };
+		AA5B11C912F2E99B001AE917 /* SgMiaiStrategy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0ED812F2E99B001AE917 /* SgMiaiStrategy.cpp */; };
+		AA5B11CA12F2E99B001AE917 /* SgMpiSynchronizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0EDB12F2E99B001AE917 /* SgMpiSynchronizer.cpp */; };
+		AA5B11CB12F2E99B001AE917 /* SgNbIterator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0EDD12F2E99B001AE917 /* SgNbIterator.cpp */; };
+		AA5B11CC12F2E99B001AE917 /* SgNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0EDF12F2E99B001AE917 /* SgNode.cpp */; };
+		AA5B11CD12F2E99B001AE917 /* SgNodeUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0EE112F2E99B001AE917 /* SgNodeUtil.cpp */; };
+		AA5B11CE12F2E99B001AE917 /* SgPlatform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0EE312F2E99B001AE917 /* SgPlatform.cpp */; };
+		AA5B11CF12F2E99B001AE917 /* SgPoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0EE512F2E99B001AE917 /* SgPoint.cpp */; };
+		AA5B11D012F2E99B001AE917 /* SgPointSet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0EE912F2E99B001AE917 /* SgPointSet.cpp */; };
+		AA5B11D112F2E99B001AE917 /* SgPointSetUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0EEB12F2E99B001AE917 /* SgPointSetUtil.cpp */; };
+		AA5B11D212F2E99B001AE917 /* SgProbCut.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0EED12F2E99B001AE917 /* SgProbCut.cpp */; };
+		AA5B11D312F2E99B001AE917 /* SgProcess.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0EEF12F2E99B001AE917 /* SgProcess.cpp */; };
+		AA5B11D412F2E99B001AE917 /* SgProp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0EF112F2E99B001AE917 /* SgProp.cpp */; };
+		AA5B11D512F2E99B001AE917 /* SgRandom.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0EF312F2E99B001AE917 /* SgRandom.cpp */; };
+		AA5B11D612F2E99B001AE917 /* SgRect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0EF512F2E99B001AE917 /* SgRect.cpp */; };
+		AA5B11D712F2E99B001AE917 /* SgSearch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0EF812F2E99B001AE917 /* SgSearch.cpp */; };
+		AA5B11D812F2E99B001AE917 /* SgSearchControl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0EFA12F2E99B001AE917 /* SgSearchControl.cpp */; };
+		AA5B11D912F2E99B001AE917 /* SgSearchStatistics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0EFC12F2E99B001AE917 /* SgSearchStatistics.cpp */; };
+		AA5B11DA12F2E99B001AE917 /* SgSearchTracer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0EFE12F2E99B001AE917 /* SgSearchTracer.cpp */; };
+		AA5B11DB12F2E99B001AE917 /* SgSearchValue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0F0012F2E99B001AE917 /* SgSearchValue.cpp */; };
+		AA5B11DC12F2E99B001AE917 /* SgStrategy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0F0712F2E99B001AE917 /* SgStrategy.cpp */; };
+		AA5B11DD12F2E99B001AE917 /* SgStringUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0F0912F2E99B001AE917 /* SgStringUtil.cpp */; };
+		AA5B11DE12F2E99B001AE917 /* SgSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0F0B12F2E99B001AE917 /* SgSystem.cpp */; };
+		AA5B11DF12F2E99B001AE917 /* SgTime.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0F0E12F2E99B001AE917 /* SgTime.cpp */; };
+		AA5B11E012F2E99B001AE917 /* SgTimeControl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0F1012F2E99B001AE917 /* SgTimeControl.cpp */; };
+		AA5B11E112F2E99B001AE917 /* SgTimeRecord.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0F1312F2E99B001AE917 /* SgTimeRecord.cpp */; };
+		AA5B11E212F2E99B001AE917 /* SgUctSearch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0F1512F2E99B001AE917 /* SgUctSearch.cpp */; };
+		AA5B11E312F2E99B001AE917 /* SgUctTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0F1712F2E99B001AE917 /* SgUctTree.cpp */; };
+		AA5B11E412F2E99B001AE917 /* SgUctTreeUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0F1912F2E99B001AE917 /* SgUctTreeUtil.cpp */; };
+		AA5B11E512F2E99B001AE917 /* SgUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0F1C12F2E99B001AE917 /* SgUtil.cpp */; };
+		AA5B11E612F2E99B001AE917 /* SgVectorUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0F1F12F2E99B001AE917 /* SgVectorUtil.cpp */; };
+		AA5B11E712F2E99B001AE917 /* SgWrite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA5B0F2112F2E99B001AE917 /* SgWrite.cpp */; };
+		AA802BFD12F27C1A00DB5E03 /* GoEngineViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = AA802BFB12F27C1A00DB5E03 /* GoEngineViewController.mm */; };
+		AA802BFE12F27C1A00DB5E03 /* GoEngineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA802BFC12F27C1A00DB5E03 /* GoEngineViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623250D0F684500981E51 /* GoAppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GoAppDelegate.mm; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* Fuego.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fuego.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* Fuego_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fuego_Prefix.pch; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Fuego-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Fuego-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		AA51CB2C12F2F6F500D828EF /* boost.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = boost.framework; path = /Users/horace/Projects/iOS/Framework/boost.framework; sourceTree = "<absolute>"; };
+		AA5B0BEC12F2E99A001AE917 /* FuegoMainEngine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FuegoMainEngine.cpp; sourceTree = "<group>"; };
+		AA5B0BED12F2E99A001AE917 /* FuegoMainEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FuegoMainEngine.h; sourceTree = "<group>"; };
+		AA5B0BEE12F2E99A001AE917 /* FuegoMainUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FuegoMainUtil.cpp; sourceTree = "<group>"; };
+		AA5B0BEF12F2E99A001AE917 /* FuegoMainUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FuegoMainUtil.h; sourceTree = "<group>"; };
+		AA5B0BF912F2E99A001AE917 /* GoAssertBoardRestored.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoAssertBoardRestored.h; sourceTree = "<group>"; };
+		AA5B0BFA12F2E99A001AE917 /* GoAutoBook.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GoAutoBook.cpp; sourceTree = "<group>"; };
+		AA5B0BFB12F2E99A001AE917 /* GoAutoBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoAutoBook.h; sourceTree = "<group>"; };
+		AA5B0BFC12F2E99A001AE917 /* GoBensonSolver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GoBensonSolver.cpp; sourceTree = "<group>"; };
+		AA5B0BFD12F2E99A001AE917 /* GoBensonSolver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoBensonSolver.h; sourceTree = "<group>"; };
+		AA5B0BFE12F2E99A001AE917 /* GoBlock.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GoBlock.cpp; sourceTree = "<group>"; };
+		AA5B0BFF12F2E99A001AE917 /* GoBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoBlock.h; sourceTree = "<group>"; };
+		AA5B0C0012F2E99A001AE917 /* GoBoard.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GoBoard.cpp; sourceTree = "<group>"; };
+		AA5B0C0112F2E99A001AE917 /* GoBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoBoard.h; sourceTree = "<group>"; };
+		AA5B0C0212F2E99A001AE917 /* GoBoardCheckPerformance.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GoBoardCheckPerformance.cpp; sourceTree = "<group>"; };
+		AA5B0C0312F2E99A001AE917 /* GoBoardCheckPerformance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoBoardCheckPerformance.h; sourceTree = "<group>"; };
+		AA5B0C0412F2E99A001AE917 /* GoBoardHistory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GoBoardHistory.cpp; sourceTree = "<group>"; };
+		AA5B0C0512F2E99A001AE917 /* GoBoardHistory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoBoardHistory.h; sourceTree = "<group>"; };
+		AA5B0C0612F2E99A001AE917 /* GoBoardRestorer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GoBoardRestorer.cpp; sourceTree = "<group>"; };
+		AA5B0C0712F2E99A001AE917 /* GoBoardRestorer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoBoardRestorer.h; sourceTree = "<group>"; };
+		AA5B0C0812F2E99A001AE917 /* GoBoardSynchronizer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GoBoardSynchronizer.cpp; sourceTree = "<group>"; };
+		AA5B0C0912F2E99A001AE917 /* GoBoardSynchronizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoBoardSynchronizer.h; sourceTree = "<group>"; };
+		AA5B0C0A12F2E99A001AE917 /* GoBoardUpdater.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GoBoardUpdater.cpp; sourceTree = "<group>"; };
+		AA5B0C0B12F2E99A001AE917 /* GoBoardUpdater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoBoardUpdater.h; sourceTree = "<group>"; };
+		AA5B0C0C12F2E99A001AE917 /* GoBoardUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GoBoardUtil.cpp; sourceTree = "<group>"; };
+		AA5B0C0D12F2E99A001AE917 /* GoBoardUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoBoardUtil.h; sourceTree = "<group>"; };
+		AA5B0C0E12F2E99A001AE917 /* GoBook.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GoBook.cpp; sourceTree = "<group>"; };
+		AA5B0C0F12F2E99A001AE917 /* GoBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoBook.h; sourceTree = "<group>"; };
+		AA5B0C1012F2E99A001AE917 /* GoChain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GoChain.cpp; sourceTree = "<group>"; };
+		AA5B0C1112F2E99A001AE917 /* GoChain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoChain.h; sourceTree = "<group>"; };
+		AA5B0C1212F2E99A001AE917 /* GoEyeCount.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GoEyeCount.cpp; sourceTree = "<group>"; };
+		AA5B0C1312F2E99A001AE917 /* GoEyeCount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoEyeCount.h; sourceTree = "<group>"; };
+		AA5B0C1412F2E99A001AE917 /* GoEyeUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GoEyeUtil.cpp; sourceTree = "<group>"; };
+		AA5B0C1512F2E99A001AE917 /* GoEyeUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoEyeUtil.h; sourceTree = "<group>"; };
+		AA5B0C1612F2E99A001AE917 /* GoGame.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GoGame.cpp; sourceTree = "<group>"; };
+		AA5B0C1712F2E99A001AE917 /* GoGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoGame.h; sourceTree = "<group>"; };
+		AA5B0C1812F2E99A001AE917 /* GoGtpCommandUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GoGtpCommandUtil.cpp; sourceTree = "<group>"; };
+		AA5B0C1912F2E99A001AE917 /* GoGtpCommandUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoGtpCommandUtil.h; sourceTree = "<group>"; };
+		AA5B0C1A12F2E99A001AE917 /* GoGtpEngine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GoGtpEngine.cpp; sourceTree = "<group>"; };
+		AA5B0C1B12F2E99A001AE917 /* GoGtpEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoGtpEngine.h; sourceTree = "<group>"; };
+		AA5B0C1C12F2E99A001AE917 /* GoGtpExtraCommands.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GoGtpExtraCommands.cpp; sourceTree = "<group>"; };
+		AA5B0C1D12F2E99A001AE917 /* GoGtpExtraCommands.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoGtpExtraCommands.h; sourceTree = "<group>"; };
+		AA5B0C1E12F2E99A001AE917 /* GoInfluence.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GoInfluence.cpp; sourceTree = "<group>"; };
+		AA5B0C1F12F2E99A001AE917 /* GoInfluence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoInfluence.h; sourceTree = "<group>"; };
+		AA5B0C2012F2E99A001AE917 /* GoInit.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GoInit.cpp; sourceTree = "<group>"; };
+		AA5B0C2112F2E99A001AE917 /* GoInit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoInit.h; sourceTree = "<group>"; };
+		AA5B0C2212F2E99A001AE917 /* GoKomi.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GoKomi.cpp; sourceTree = "<group>"; };
+		AA5B0C2312F2E99A001AE917 /* GoKomi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoKomi.h; sourceTree = "<group>"; };
+		AA5B0C2412F2E99A001AE917 /* GoLadder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GoLadder.cpp; sourceTree = "<group>"; };
+		AA5B0C2512F2E99A001AE917 /* GoLadder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoLadder.h; sourceTree = "<group>"; };
+		AA5B0C2612F2E99A001AE917 /* GoModBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoModBoard.h; sourceTree = "<group>"; };
+		AA5B0C2712F2E99A001AE917 /* GoMotive.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GoMotive.cpp; sourceTree = "<group>"; };
+		AA5B0C2812F2E99A001AE917 /* GoMotive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoMotive.h; sourceTree = "<group>"; };
+		AA5B0C2912F2E99A001AE917 /* GoMoveExecutor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoMoveExecutor.h; sourceTree = "<group>"; };
+		AA5B0C2A12F2E99A001AE917 /* GoNodeUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GoNodeUtil.cpp; sourceTree = "<group>"; };
+		AA5B0C2B12F2E99A001AE917 /* GoNodeUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoNodeUtil.h; sourceTree = "<group>"; };
+		AA5B0C2C12F2E99A001AE917 /* GoPlayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GoPlayer.cpp; sourceTree = "<group>"; };
+		AA5B0C2D12F2E99A001AE917 /* GoPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoPlayer.h; sourceTree = "<group>"; };
+		AA5B0C2E12F2E99A001AE917 /* GoPlayerMove.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GoPlayerMove.cpp; sourceTree = "<group>"; };
+		AA5B0C2F12F2E99A001AE917 /* GoPlayerMove.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoPlayerMove.h; sourceTree = "<group>"; };
+		AA5B0C3012F2E99A001AE917 /* GoRegion.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GoRegion.cpp; sourceTree = "<group>"; };
+		AA5B0C3112F2E99A001AE917 /* GoRegion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoRegion.h; sourceTree = "<group>"; };
+		AA5B0C3212F2E99A001AE917 /* GoRegionBoard.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GoRegionBoard.cpp; sourceTree = "<group>"; };
+		AA5B0C3312F2E99A001AE917 /* GoRegionBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoRegionBoard.h; sourceTree = "<group>"; };
+		AA5B0C3412F2E99A001AE917 /* GoRegionUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GoRegionUtil.cpp; sourceTree = "<group>"; };
+		AA5B0C3512F2E99A001AE917 /* GoRegionUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoRegionUtil.h; sourceTree = "<group>"; };
+		AA5B0C3612F2E99A001AE917 /* GoRules.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GoRules.cpp; sourceTree = "<group>"; };
+		AA5B0C3712F2E99A001AE917 /* GoRules.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoRules.h; sourceTree = "<group>"; };
+		AA5B0C3812F2E99A001AE917 /* GoSafetyCommands.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GoSafetyCommands.cpp; sourceTree = "<group>"; };
+		AA5B0C3912F2E99A001AE917 /* GoSafetyCommands.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoSafetyCommands.h; sourceTree = "<group>"; };
+		AA5B0C3A12F2E99A001AE917 /* GoSafetySolver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GoSafetySolver.cpp; sourceTree = "<group>"; };
+		AA5B0C3B12F2E99A001AE917 /* GoSafetySolver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoSafetySolver.h; sourceTree = "<group>"; };
+		AA5B0C3C12F2E99A001AE917 /* GoSafetyUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GoSafetyUtil.cpp; sourceTree = "<group>"; };
+		AA5B0C3D12F2E99A001AE917 /* GoSafetyUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoSafetyUtil.h; sourceTree = "<group>"; };
+		AA5B0C3E12F2E99A001AE917 /* GoSearch.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GoSearch.cpp; sourceTree = "<group>"; };
+		AA5B0C3F12F2E99A001AE917 /* GoSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoSearch.h; sourceTree = "<group>"; };
+		AA5B0C4012F2E99A001AE917 /* GoSetup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoSetup.h; sourceTree = "<group>"; };
+		AA5B0C4112F2E99A001AE917 /* GoSetupUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GoSetupUtil.cpp; sourceTree = "<group>"; };
+		AA5B0C4212F2E99A001AE917 /* GoSetupUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoSetupUtil.h; sourceTree = "<group>"; };
+		AA5B0C4312F2E99A001AE917 /* GoSortedMoves.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoSortedMoves.h; sourceTree = "<group>"; };
+		AA5B0C4412F2E99A001AE917 /* GoStaticLadder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GoStaticLadder.cpp; sourceTree = "<group>"; };
+		AA5B0C4512F2E99A001AE917 /* GoStaticLadder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoStaticLadder.h; sourceTree = "<group>"; };
+		AA5B0C4612F2E99A001AE917 /* GoStaticSafetySolver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GoStaticSafetySolver.cpp; sourceTree = "<group>"; };
+		AA5B0C4712F2E99A001AE917 /* GoStaticSafetySolver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoStaticSafetySolver.h; sourceTree = "<group>"; };
+		AA5B0C4812F2E99A001AE917 /* GoTimeControl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GoTimeControl.cpp; sourceTree = "<group>"; };
+		AA5B0C4912F2E99A001AE917 /* GoTimeControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoTimeControl.h; sourceTree = "<group>"; };
+		AA5B0C4A12F2E99A001AE917 /* GoTimeSettings.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GoTimeSettings.cpp; sourceTree = "<group>"; };
+		AA5B0C4B12F2E99A001AE917 /* GoTimeSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoTimeSettings.h; sourceTree = "<group>"; };
+		AA5B0C4C12F2E99A001AE917 /* GoUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GoUtil.cpp; sourceTree = "<group>"; };
+		AA5B0C4D12F2E99A001AE917 /* GoUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoUtil.h; sourceTree = "<group>"; };
+		AA5B0C6312F2E99A001AE917 /* GoUctBoard.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GoUctBoard.cpp; sourceTree = "<group>"; };
+		AA5B0C6412F2E99A001AE917 /* GoUctBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoUctBoard.h; sourceTree = "<group>"; };
+		AA5B0C6512F2E99A001AE917 /* GoUctBookBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoUctBookBuilder.h; sourceTree = "<group>"; };
+		AA5B0C6612F2E99A001AE917 /* GoUctBookBuilderCommands.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoUctBookBuilderCommands.h; sourceTree = "<group>"; };
+		AA5B0C6712F2E99A001AE917 /* GoUctCommands.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GoUctCommands.cpp; sourceTree = "<group>"; };
+		AA5B0C6812F2E99A001AE917 /* GoUctCommands.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoUctCommands.h; sourceTree = "<group>"; };
+		AA5B0C6912F2E99A001AE917 /* GoUctDefaultPriorKnowledge.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GoUctDefaultPriorKnowledge.cpp; sourceTree = "<group>"; };
+		AA5B0C6A12F2E99A001AE917 /* GoUctDefaultPriorKnowledge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoUctDefaultPriorKnowledge.h; sourceTree = "<group>"; };
+		AA5B0C6B12F2E99A001AE917 /* GoUctDefaultRootFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GoUctDefaultRootFilter.cpp; sourceTree = "<group>"; };
+		AA5B0C6C12F2E99A001AE917 /* GoUctDefaultRootFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoUctDefaultRootFilter.h; sourceTree = "<group>"; };
+		AA5B0C6D12F2E99A001AE917 /* GoUctEstimatorStat.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GoUctEstimatorStat.cpp; sourceTree = "<group>"; };
+		AA5B0C6E12F2E99A001AE917 /* GoUctEstimatorStat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoUctEstimatorStat.h; sourceTree = "<group>"; };
+		AA5B0C6F12F2E99A001AE917 /* GoUctGlobalSearch.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GoUctGlobalSearch.cpp; sourceTree = "<group>"; };
+		AA5B0C7012F2E99A001AE917 /* GoUctGlobalSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoUctGlobalSearch.h; sourceTree = "<group>"; };
+		AA5B0C7112F2E99A001AE917 /* GoUctObjectWithSearch.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GoUctObjectWithSearch.cpp; sourceTree = "<group>"; };
+		AA5B0C7212F2E99A001AE917 /* GoUctObjectWithSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoUctObjectWithSearch.h; sourceTree = "<group>"; };
+		AA5B0C7312F2E99A001AE917 /* GoUctPatterns.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoUctPatterns.h; sourceTree = "<group>"; };
+		AA5B0C7412F2E99A001AE917 /* GoUctPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoUctPlayer.h; sourceTree = "<group>"; };
+		AA5B0C7512F2E99A001AE917 /* GoUctPlayoutPolicy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GoUctPlayoutPolicy.cpp; sourceTree = "<group>"; };
+		AA5B0C7612F2E99A001AE917 /* GoUctPlayoutPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoUctPlayoutPolicy.h; sourceTree = "<group>"; };
+		AA5B0C7712F2E99A001AE917 /* GoUctPureRandomGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoUctPureRandomGenerator.h; sourceTree = "<group>"; };
+		AA5B0C7812F2E99A001AE917 /* GoUctRootFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GoUctRootFilter.cpp; sourceTree = "<group>"; };
+		AA5B0C7912F2E99A001AE917 /* GoUctRootFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoUctRootFilter.h; sourceTree = "<group>"; };
+		AA5B0C7A12F2E99A001AE917 /* GoUctSearch.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GoUctSearch.cpp; sourceTree = "<group>"; };
+		AA5B0C7B12F2E99A001AE917 /* GoUctSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoUctSearch.h; sourceTree = "<group>"; };
+		AA5B0C7C12F2E99A001AE917 /* GoUctUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GoUctUtil.cpp; sourceTree = "<group>"; };
+		AA5B0C7D12F2E99A001AE917 /* GoUctUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoUctUtil.h; sourceTree = "<group>"; };
+		AA5B0C8412F2E99A001AE917 /* GtpEngine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GtpEngine.cpp; sourceTree = "<group>"; };
+		AA5B0C8512F2E99A001AE917 /* GtpEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GtpEngine.h; sourceTree = "<group>"; };
+		AA5B0C8612F2E99A001AE917 /* GtpInputStream.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GtpInputStream.cpp; sourceTree = "<group>"; };
+		AA5B0C8712F2E99A001AE917 /* GtpInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GtpInputStream.h; sourceTree = "<group>"; };
+		AA5B0C8812F2E99A001AE917 /* GtpOutputStream.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GtpOutputStream.cpp; sourceTree = "<group>"; };
+		AA5B0C8912F2E99A001AE917 /* GtpOutputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GtpOutputStream.h; sourceTree = "<group>"; };
+		AA5B0EAB12F2E99B001AE917 /* SgArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SgArray.h; sourceTree = "<group>"; };
+		AA5B0EAC12F2E99B001AE917 /* SgArrayList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SgArrayList.h; sourceTree = "<group>"; };
+		AA5B0EAD12F2E99B001AE917 /* SgBlackWhite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SgBlackWhite.h; sourceTree = "<group>"; };
+		AA5B0EAE12F2E99B001AE917 /* SgBoardColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SgBoardColor.h; sourceTree = "<group>"; };
+		AA5B0EAF12F2E99B001AE917 /* SgBoardConst.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SgBoardConst.cpp; sourceTree = "<group>"; };
+		AA5B0EB012F2E99B001AE917 /* SgBoardConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SgBoardConst.h; sourceTree = "<group>"; };
+		AA5B0EB112F2E99B001AE917 /* SgBookBuilder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SgBookBuilder.cpp; sourceTree = "<group>"; };
+		AA5B0EB212F2E99B001AE917 /* SgBookBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SgBookBuilder.h; sourceTree = "<group>"; };
+		AA5B0EB312F2E99B001AE917 /* SgBWArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SgBWArray.h; sourceTree = "<group>"; };
+		AA5B0EB412F2E99B001AE917 /* SgBWSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SgBWSet.h; sourceTree = "<group>"; };
+		AA5B0EB512F2E99B001AE917 /* SgCmdLineOpt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SgCmdLineOpt.cpp; sourceTree = "<group>"; };
+		AA5B0EB612F2E99B001AE917 /* SgCmdLineOpt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SgCmdLineOpt.h; sourceTree = "<group>"; };
+		AA5B0EB712F2E99B001AE917 /* SgConnCompIterator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SgConnCompIterator.cpp; sourceTree = "<group>"; };
+		AA5B0EB812F2E99B001AE917 /* SgConnCompIterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SgConnCompIterator.h; sourceTree = "<group>"; };
+		AA5B0EB912F2E99B001AE917 /* SgDebug.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SgDebug.cpp; sourceTree = "<group>"; };
+		AA5B0EBA12F2E99B001AE917 /* SgDebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SgDebug.h; sourceTree = "<group>"; };
+		AA5B0EBB12F2E99B001AE917 /* SgEBWArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SgEBWArray.h; sourceTree = "<group>"; };
+		AA5B0EBC12F2E99B001AE917 /* SgEvaluatedMoves.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SgEvaluatedMoves.cpp; sourceTree = "<group>"; };
+		AA5B0EBD12F2E99B001AE917 /* SgEvaluatedMoves.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SgEvaluatedMoves.h; sourceTree = "<group>"; };
+		AA5B0EBE12F2E99B001AE917 /* SgException.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SgException.cpp; sourceTree = "<group>"; };
+		AA5B0EBF12F2E99B001AE917 /* SgException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SgException.h; sourceTree = "<group>"; };
+		AA5B0EC012F2E99B001AE917 /* SgFastLog.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SgFastLog.cpp; sourceTree = "<group>"; };
+		AA5B0EC112F2E99B001AE917 /* SgFastLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SgFastLog.h; sourceTree = "<group>"; };
+		AA5B0EC212F2E99B001AE917 /* SgGameReader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SgGameReader.cpp; sourceTree = "<group>"; };
+		AA5B0EC312F2E99B001AE917 /* SgGameReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SgGameReader.h; sourceTree = "<group>"; };
+		AA5B0EC412F2E99B001AE917 /* SgGameWriter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SgGameWriter.cpp; sourceTree = "<group>"; };
+		AA5B0EC512F2E99B001AE917 /* SgGameWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SgGameWriter.h; sourceTree = "<group>"; };
+		AA5B0EC612F2E99B001AE917 /* SgGtpClient.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SgGtpClient.cpp; sourceTree = "<group>"; };
+		AA5B0EC712F2E99B001AE917 /* SgGtpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SgGtpClient.h; sourceTree = "<group>"; };
+		AA5B0EC812F2E99B001AE917 /* SgGtpCommands.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SgGtpCommands.cpp; sourceTree = "<group>"; };
+		AA5B0EC912F2E99B001AE917 /* SgGtpCommands.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SgGtpCommands.h; sourceTree = "<group>"; };
+		AA5B0ECA12F2E99B001AE917 /* SgGtpUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SgGtpUtil.cpp; sourceTree = "<group>"; };
+		AA5B0ECB12F2E99B001AE917 /* SgGtpUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SgGtpUtil.h; sourceTree = "<group>"; };
+		AA5B0ECC12F2E99B001AE917 /* SgHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SgHash.h; sourceTree = "<group>"; };
+		AA5B0ECD12F2E99B001AE917 /* SgHashTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SgHashTable.h; sourceTree = "<group>"; };
+		AA5B0ECE12F2E99B001AE917 /* SgIncrementalStack.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SgIncrementalStack.cpp; sourceTree = "<group>"; };
+		AA5B0ECF12F2E99B001AE917 /* SgIncrementalStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SgIncrementalStack.h; sourceTree = "<group>"; };
+		AA5B0ED012F2E99B001AE917 /* SgInit.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SgInit.cpp; sourceTree = "<group>"; };
+		AA5B0ED112F2E99B001AE917 /* SgInit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SgInit.h; sourceTree = "<group>"; };
+		AA5B0ED212F2E99B001AE917 /* SgMarker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SgMarker.h; sourceTree = "<group>"; };
+		AA5B0ED312F2E99B001AE917 /* SgMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SgMath.h; sourceTree = "<group>"; };
+		AA5B0ED412F2E99B001AE917 /* SgMemCheck.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SgMemCheck.cpp; sourceTree = "<group>"; };
+		AA5B0ED512F2E99B001AE917 /* SgMemCheck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SgMemCheck.h; sourceTree = "<group>"; };
+		AA5B0ED612F2E99B001AE917 /* SgMiaiMap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SgMiaiMap.cpp; sourceTree = "<group>"; };
+		AA5B0ED712F2E99B001AE917 /* SgMiaiMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SgMiaiMap.h; sourceTree = "<group>"; };
+		AA5B0ED812F2E99B001AE917 /* SgMiaiStrategy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SgMiaiStrategy.cpp; sourceTree = "<group>"; };
+		AA5B0ED912F2E99B001AE917 /* SgMiaiStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SgMiaiStrategy.h; sourceTree = "<group>"; };
+		AA5B0EDA12F2E99B001AE917 /* SgMove.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SgMove.h; sourceTree = "<group>"; };
+		AA5B0EDB12F2E99B001AE917 /* SgMpiSynchronizer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SgMpiSynchronizer.cpp; sourceTree = "<group>"; };
+		AA5B0EDC12F2E99B001AE917 /* SgMpiSynchronizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SgMpiSynchronizer.h; sourceTree = "<group>"; };
+		AA5B0EDD12F2E99B001AE917 /* SgNbIterator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SgNbIterator.cpp; sourceTree = "<group>"; };
+		AA5B0EDE12F2E99B001AE917 /* SgNbIterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SgNbIterator.h; sourceTree = "<group>"; };
+		AA5B0EDF12F2E99B001AE917 /* SgNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SgNode.cpp; sourceTree = "<group>"; };
+		AA5B0EE012F2E99B001AE917 /* SgNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SgNode.h; sourceTree = "<group>"; };
+		AA5B0EE112F2E99B001AE917 /* SgNodeUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SgNodeUtil.cpp; sourceTree = "<group>"; };
+		AA5B0EE212F2E99B001AE917 /* SgNodeUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SgNodeUtil.h; sourceTree = "<group>"; };
+		AA5B0EE312F2E99B001AE917 /* SgPlatform.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SgPlatform.cpp; sourceTree = "<group>"; };
+		AA5B0EE412F2E99B001AE917 /* SgPlatform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SgPlatform.h; sourceTree = "<group>"; };
+		AA5B0EE512F2E99B001AE917 /* SgPoint.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SgPoint.cpp; sourceTree = "<group>"; };
+		AA5B0EE612F2E99B001AE917 /* SgPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SgPoint.h; sourceTree = "<group>"; };
+		AA5B0EE712F2E99B001AE917 /* SgPointArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SgPointArray.h; sourceTree = "<group>"; };
+		AA5B0EE812F2E99B001AE917 /* SgPointIterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SgPointIterator.h; sourceTree = "<group>"; };
+		AA5B0EE912F2E99B001AE917 /* SgPointSet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SgPointSet.cpp; sourceTree = "<group>"; };
+		AA5B0EEA12F2E99B001AE917 /* SgPointSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SgPointSet.h; sourceTree = "<group>"; };
+		AA5B0EEB12F2E99B001AE917 /* SgPointSetUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SgPointSetUtil.cpp; sourceTree = "<group>"; };
+		AA5B0EEC12F2E99B001AE917 /* SgPointSetUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SgPointSetUtil.h; sourceTree = "<group>"; };
+		AA5B0EED12F2E99B001AE917 /* SgProbCut.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SgProbCut.cpp; sourceTree = "<group>"; };
+		AA5B0EEE12F2E99B001AE917 /* SgProbCut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SgProbCut.h; sourceTree = "<group>"; };
+		AA5B0EEF12F2E99B001AE917 /* SgProcess.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SgProcess.cpp; sourceTree = "<group>"; };
+		AA5B0EF012F2E99B001AE917 /* SgProcess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SgProcess.h; sourceTree = "<group>"; };
+		AA5B0EF112F2E99B001AE917 /* SgProp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SgProp.cpp; sourceTree = "<group>"; };
+		AA5B0EF212F2E99B001AE917 /* SgProp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SgProp.h; sourceTree = "<group>"; };
+		AA5B0EF312F2E99B001AE917 /* SgRandom.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SgRandom.cpp; sourceTree = "<group>"; };
+		AA5B0EF412F2E99B001AE917 /* SgRandom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SgRandom.h; sourceTree = "<group>"; };
+		AA5B0EF512F2E99B001AE917 /* SgRect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SgRect.cpp; sourceTree = "<group>"; };
+		AA5B0EF612F2E99B001AE917 /* SgRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SgRect.h; sourceTree = "<group>"; };
+		AA5B0EF712F2E99B001AE917 /* SgRestorer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SgRestorer.h; sourceTree = "<group>"; };
+		AA5B0EF812F2E99B001AE917 /* SgSearch.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SgSearch.cpp; sourceTree = "<group>"; };
+		AA5B0EF912F2E99B001AE917 /* SgSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SgSearch.h; sourceTree = "<group>"; };
+		AA5B0EFA12F2E99B001AE917 /* SgSearchControl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SgSearchControl.cpp; sourceTree = "<group>"; };
+		AA5B0EFB12F2E99B001AE917 /* SgSearchControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SgSearchControl.h; sourceTree = "<group>"; };
+		AA5B0EFC12F2E99B001AE917 /* SgSearchStatistics.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SgSearchStatistics.cpp; sourceTree = "<group>"; };
+		AA5B0EFD12F2E99B001AE917 /* SgSearchStatistics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SgSearchStatistics.h; sourceTree = "<group>"; };
+		AA5B0EFE12F2E99B001AE917 /* SgSearchTracer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SgSearchTracer.cpp; sourceTree = "<group>"; };
+		AA5B0EFF12F2E99B001AE917 /* SgSearchTracer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SgSearchTracer.h; sourceTree = "<group>"; };
+		AA5B0F0012F2E99B001AE917 /* SgSearchValue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SgSearchValue.cpp; sourceTree = "<group>"; };
+		AA5B0F0112F2E99B001AE917 /* SgSearchValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SgSearchValue.h; sourceTree = "<group>"; };
+		AA5B0F0212F2E99B001AE917 /* SgSortedArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SgSortedArray.h; sourceTree = "<group>"; };
+		AA5B0F0312F2E99B001AE917 /* SgSortedMoves.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SgSortedMoves.h; sourceTree = "<group>"; };
+		AA5B0F0412F2E99B001AE917 /* SgStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SgStack.h; sourceTree = "<group>"; };
+		AA5B0F0512F2E99B001AE917 /* SgStatistics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SgStatistics.h; sourceTree = "<group>"; };
+		AA5B0F0612F2E99B001AE917 /* SgStatisticsVlt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SgStatisticsVlt.h; sourceTree = "<group>"; };
+		AA5B0F0712F2E99B001AE917 /* SgStrategy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SgStrategy.cpp; sourceTree = "<group>"; };
+		AA5B0F0812F2E99B001AE917 /* SgStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SgStrategy.h; sourceTree = "<group>"; };
+		AA5B0F0912F2E99B001AE917 /* SgStringUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SgStringUtil.cpp; sourceTree = "<group>"; };
+		AA5B0F0A12F2E99B001AE917 /* SgStringUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SgStringUtil.h; sourceTree = "<group>"; };
+		AA5B0F0B12F2E99B001AE917 /* SgSystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SgSystem.cpp; sourceTree = "<group>"; };
+		AA5B0F0C12F2E99B001AE917 /* SgSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SgSystem.h; sourceTree = "<group>"; };
+		AA5B0F0D12F2E99B001AE917 /* SgThreadedWorker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SgThreadedWorker.h; sourceTree = "<group>"; };
+		AA5B0F0E12F2E99B001AE917 /* SgTime.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SgTime.cpp; sourceTree = "<group>"; };
+		AA5B0F0F12F2E99B001AE917 /* SgTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SgTime.h; sourceTree = "<group>"; };
+		AA5B0F1012F2E99B001AE917 /* SgTimeControl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SgTimeControl.cpp; sourceTree = "<group>"; };
+		AA5B0F1112F2E99B001AE917 /* SgTimeControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SgTimeControl.h; sourceTree = "<group>"; };
+		AA5B0F1212F2E99B001AE917 /* SgTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SgTimer.h; sourceTree = "<group>"; };
+		AA5B0F1312F2E99B001AE917 /* SgTimeRecord.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SgTimeRecord.cpp; sourceTree = "<group>"; };
+		AA5B0F1412F2E99B001AE917 /* SgTimeRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SgTimeRecord.h; sourceTree = "<group>"; };
+		AA5B0F1512F2E99B001AE917 /* SgUctSearch.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SgUctSearch.cpp; sourceTree = "<group>"; };
+		AA5B0F1612F2E99B001AE917 /* SgUctSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SgUctSearch.h; sourceTree = "<group>"; };
+		AA5B0F1712F2E99B001AE917 /* SgUctTree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SgUctTree.cpp; sourceTree = "<group>"; };
+		AA5B0F1812F2E99B001AE917 /* SgUctTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SgUctTree.h; sourceTree = "<group>"; };
+		AA5B0F1912F2E99B001AE917 /* SgUctTreeUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SgUctTreeUtil.cpp; sourceTree = "<group>"; };
+		AA5B0F1A12F2E99B001AE917 /* SgUctTreeUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SgUctTreeUtil.h; sourceTree = "<group>"; };
+		AA5B0F1B12F2E99B001AE917 /* SgUctValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SgUctValue.h; sourceTree = "<group>"; };
+		AA5B0F1C12F2E99B001AE917 /* SgUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SgUtil.cpp; sourceTree = "<group>"; };
+		AA5B0F1D12F2E99B001AE917 /* SgUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SgUtil.h; sourceTree = "<group>"; };
+		AA5B0F1E12F2E99B001AE917 /* SgVector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SgVector.h; sourceTree = "<group>"; };
+		AA5B0F1F12F2E99B001AE917 /* SgVectorUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SgVectorUtil.cpp; sourceTree = "<group>"; };
+		AA5B0F2012F2E99B001AE917 /* SgVectorUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SgVectorUtil.h; sourceTree = "<group>"; };
+		AA5B0F2112F2E99B001AE917 /* SgWrite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SgWrite.cpp; sourceTree = "<group>"; };
+		AA5B0F2212F2E99B001AE917 /* SgWrite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SgWrite.h; sourceTree = "<group>"; };
+		AA802BFA12F27C1A00DB5E03 /* GoEngineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoEngineViewController.h; sourceTree = "<group>"; };
+		AA802BFB12F27C1A00DB5E03 /* GoEngineViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GoEngineViewController.mm; sourceTree = "<group>"; };
+		AA802BFC12F27C1A00DB5E03 /* GoEngineViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = GoEngineViewController.xib; path = Classes/GoEngineViewController.xib; sourceTree = "<group>"; };
+		AA802C0C12F27CF800DB5E03 /* GoAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoAppDelegate.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
+				AA51CB2D12F2F6F500D828EF /* boost.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				AA802C0C12F27CF800DB5E03 /* GoAppDelegate.h */,
+				1D3623250D0F684500981E51 /* GoAppDelegate.mm */,
+				AA802BFA12F27C1A00DB5E03 /* GoEngineViewController.h */,
+				AA802BFB12F27C1A00DB5E03 /* GoEngineViewController.mm */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* Fuego.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				AA5B0B9B12F2E99A001AE917 /* fuego-1.0 */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* Fuego_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AA802BFC12F27C1A00DB5E03 /* GoEngineViewController.xib */,
+				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+				8D1107310486CEB800E47090 /* Fuego-Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
+				AA51CB2C12F2F6F500D828EF /* boost.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AA5B0B9B12F2E99A001AE917 /* fuego-1.0 */ = {
+			isa = PBXGroup;
+			children = (
+				AA5B0BEA12F2E99A001AE917 /* fuegomain */,
+				AA5B0BF812F2E99A001AE917 /* go */,
+				AA5B0C6212F2E99A001AE917 /* gouct */,
+				AA5B0C8312F2E99A001AE917 /* gtpengine */,
+				AA5B0EA812F2E99B001AE917 /* smartgame */,
+			);
+			name = "fuego-1.0";
+			path = "Engine/fuego-1.0";
+			sourceTree = "<group>";
+		};
+		AA5B0BEA12F2E99A001AE917 /* fuegomain */ = {
+			isa = PBXGroup;
+			children = (
+				AA5B0BEC12F2E99A001AE917 /* FuegoMainEngine.cpp */,
+				AA5B0BED12F2E99A001AE917 /* FuegoMainEngine.h */,
+				AA5B0BEE12F2E99A001AE917 /* FuegoMainUtil.cpp */,
+				AA5B0BEF12F2E99A001AE917 /* FuegoMainUtil.h */,
+			);
+			path = fuegomain;
+			sourceTree = "<group>";
+		};
+		AA5B0BF812F2E99A001AE917 /* go */ = {
+			isa = PBXGroup;
+			children = (
+				AA5B0BF912F2E99A001AE917 /* GoAssertBoardRestored.h */,
+				AA5B0BFA12F2E99A001AE917 /* GoAutoBook.cpp */,
+				AA5B0BFB12F2E99A001AE917 /* GoAutoBook.h */,
+				AA5B0BFC12F2E99A001AE917 /* GoBensonSolver.cpp */,
+				AA5B0BFD12F2E99A001AE917 /* GoBensonSolver.h */,
+				AA5B0BFE12F2E99A001AE917 /* GoBlock.cpp */,
+				AA5B0BFF12F2E99A001AE917 /* GoBlock.h */,
+				AA5B0C0012F2E99A001AE917 /* GoBoard.cpp */,
+				AA5B0C0112F2E99A001AE917 /* GoBoard.h */,
+				AA5B0C0212F2E99A001AE917 /* GoBoardCheckPerformance.cpp */,
+				AA5B0C0312F2E99A001AE917 /* GoBoardCheckPerformance.h */,
+				AA5B0C0412F2E99A001AE917 /* GoBoardHistory.cpp */,
+				AA5B0C0512F2E99A001AE917 /* GoBoardHistory.h */,
+				AA5B0C0612F2E99A001AE917 /* GoBoardRestorer.cpp */,
+				AA5B0C0712F2E99A001AE917 /* GoBoardRestorer.h */,
+				AA5B0C0812F2E99A001AE917 /* GoBoardSynchronizer.cpp */,
+				AA5B0C0912F2E99A001AE917 /* GoBoardSynchronizer.h */,
+				AA5B0C0A12F2E99A001AE917 /* GoBoardUpdater.cpp */,
+				AA5B0C0B12F2E99A001AE917 /* GoBoardUpdater.h */,
+				AA5B0C0C12F2E99A001AE917 /* GoBoardUtil.cpp */,
+				AA5B0C0D12F2E99A001AE917 /* GoBoardUtil.h */,
+				AA5B0C0E12F2E99A001AE917 /* GoBook.cpp */,
+				AA5B0C0F12F2E99A001AE917 /* GoBook.h */,
+				AA5B0C1012F2E99A001AE917 /* GoChain.cpp */,
+				AA5B0C1112F2E99A001AE917 /* GoChain.h */,
+				AA5B0C1212F2E99A001AE917 /* GoEyeCount.cpp */,
+				AA5B0C1312F2E99A001AE917 /* GoEyeCount.h */,
+				AA5B0C1412F2E99A001AE917 /* GoEyeUtil.cpp */,
+				AA5B0C1512F2E99A001AE917 /* GoEyeUtil.h */,
+				AA5B0C1612F2E99A001AE917 /* GoGame.cpp */,
+				AA5B0C1712F2E99A001AE917 /* GoGame.h */,
+				AA5B0C1812F2E99A001AE917 /* GoGtpCommandUtil.cpp */,
+				AA5B0C1912F2E99A001AE917 /* GoGtpCommandUtil.h */,
+				AA5B0C1A12F2E99A001AE917 /* GoGtpEngine.cpp */,
+				AA5B0C1B12F2E99A001AE917 /* GoGtpEngine.h */,
+				AA5B0C1C12F2E99A001AE917 /* GoGtpExtraCommands.cpp */,
+				AA5B0C1D12F2E99A001AE917 /* GoGtpExtraCommands.h */,
+				AA5B0C1E12F2E99A001AE917 /* GoInfluence.cpp */,
+				AA5B0C1F12F2E99A001AE917 /* GoInfluence.h */,
+				AA5B0C2012F2E99A001AE917 /* GoInit.cpp */,
+				AA5B0C2112F2E99A001AE917 /* GoInit.h */,
+				AA5B0C2212F2E99A001AE917 /* GoKomi.cpp */,
+				AA5B0C2312F2E99A001AE917 /* GoKomi.h */,
+				AA5B0C2412F2E99A001AE917 /* GoLadder.cpp */,
+				AA5B0C2512F2E99A001AE917 /* GoLadder.h */,
+				AA5B0C2612F2E99A001AE917 /* GoModBoard.h */,
+				AA5B0C2712F2E99A001AE917 /* GoMotive.cpp */,
+				AA5B0C2812F2E99A001AE917 /* GoMotive.h */,
+				AA5B0C2912F2E99A001AE917 /* GoMoveExecutor.h */,
+				AA5B0C2A12F2E99A001AE917 /* GoNodeUtil.cpp */,
+				AA5B0C2B12F2E99A001AE917 /* GoNodeUtil.h */,
+				AA5B0C2C12F2E99A001AE917 /* GoPlayer.cpp */,
+				AA5B0C2D12F2E99A001AE917 /* GoPlayer.h */,
+				AA5B0C2E12F2E99A001AE917 /* GoPlayerMove.cpp */,
+				AA5B0C2F12F2E99A001AE917 /* GoPlayerMove.h */,
+				AA5B0C3012F2E99A001AE917 /* GoRegion.cpp */,
+				AA5B0C3112F2E99A001AE917 /* GoRegion.h */,
+				AA5B0C3212F2E99A001AE917 /* GoRegionBoard.cpp */,
+				AA5B0C3312F2E99A001AE917 /* GoRegionBoard.h */,
+				AA5B0C3412F2E99A001AE917 /* GoRegionUtil.cpp */,
+				AA5B0C3512F2E99A001AE917 /* GoRegionUtil.h */,
+				AA5B0C3612F2E99A001AE917 /* GoRules.cpp */,
+				AA5B0C3712F2E99A001AE917 /* GoRules.h */,
+				AA5B0C3812F2E99A001AE917 /* GoSafetyCommands.cpp */,
+				AA5B0C3912F2E99A001AE917 /* GoSafetyCommands.h */,
+				AA5B0C3A12F2E99A001AE917 /* GoSafetySolver.cpp */,
+				AA5B0C3B12F2E99A001AE917 /* GoSafetySolver.h */,
+				AA5B0C3C12F2E99A001AE917 /* GoSafetyUtil.cpp */,
+				AA5B0C3D12F2E99A001AE917 /* GoSafetyUtil.h */,
+				AA5B0C3E12F2E99A001AE917 /* GoSearch.cpp */,
+				AA5B0C3F12F2E99A001AE917 /* GoSearch.h */,
+				AA5B0C4012F2E99A001AE917 /* GoSetup.h */,
+				AA5B0C4112F2E99A001AE917 /* GoSetupUtil.cpp */,
+				AA5B0C4212F2E99A001AE917 /* GoSetupUtil.h */,
+				AA5B0C4312F2E99A001AE917 /* GoSortedMoves.h */,
+				AA5B0C4412F2E99A001AE917 /* GoStaticLadder.cpp */,
+				AA5B0C4512F2E99A001AE917 /* GoStaticLadder.h */,
+				AA5B0C4612F2E99A001AE917 /* GoStaticSafetySolver.cpp */,
+				AA5B0C4712F2E99A001AE917 /* GoStaticSafetySolver.h */,
+				AA5B0C4812F2E99A001AE917 /* GoTimeControl.cpp */,
+				AA5B0C4912F2E99A001AE917 /* GoTimeControl.h */,
+				AA5B0C4A12F2E99A001AE917 /* GoTimeSettings.cpp */,
+				AA5B0C4B12F2E99A001AE917 /* GoTimeSettings.h */,
+				AA5B0C4C12F2E99A001AE917 /* GoUtil.cpp */,
+				AA5B0C4D12F2E99A001AE917 /* GoUtil.h */,
+			);
+			path = go;
+			sourceTree = "<group>";
+		};
+		AA5B0C6212F2E99A001AE917 /* gouct */ = {
+			isa = PBXGroup;
+			children = (
+				AA5B0C6312F2E99A001AE917 /* GoUctBoard.cpp */,
+				AA5B0C6412F2E99A001AE917 /* GoUctBoard.h */,
+				AA5B0C6512F2E99A001AE917 /* GoUctBookBuilder.h */,
+				AA5B0C6612F2E99A001AE917 /* GoUctBookBuilderCommands.h */,
+				AA5B0C6712F2E99A001AE917 /* GoUctCommands.cpp */,
+				AA5B0C6812F2E99A001AE917 /* GoUctCommands.h */,
+				AA5B0C6912F2E99A001AE917 /* GoUctDefaultPriorKnowledge.cpp */,
+				AA5B0C6A12F2E99A001AE917 /* GoUctDefaultPriorKnowledge.h */,
+				AA5B0C6B12F2E99A001AE917 /* GoUctDefaultRootFilter.cpp */,
+				AA5B0C6C12F2E99A001AE917 /* GoUctDefaultRootFilter.h */,
+				AA5B0C6D12F2E99A001AE917 /* GoUctEstimatorStat.cpp */,
+				AA5B0C6E12F2E99A001AE917 /* GoUctEstimatorStat.h */,
+				AA5B0C6F12F2E99A001AE917 /* GoUctGlobalSearch.cpp */,
+				AA5B0C7012F2E99A001AE917 /* GoUctGlobalSearch.h */,
+				AA5B0C7112F2E99A001AE917 /* GoUctObjectWithSearch.cpp */,
+				AA5B0C7212F2E99A001AE917 /* GoUctObjectWithSearch.h */,
+				AA5B0C7312F2E99A001AE917 /* GoUctPatterns.h */,
+				AA5B0C7412F2E99A001AE917 /* GoUctPlayer.h */,
+				AA5B0C7512F2E99A001AE917 /* GoUctPlayoutPolicy.cpp */,
+				AA5B0C7612F2E99A001AE917 /* GoUctPlayoutPolicy.h */,
+				AA5B0C7712F2E99A001AE917 /* GoUctPureRandomGenerator.h */,
+				AA5B0C7812F2E99A001AE917 /* GoUctRootFilter.cpp */,
+				AA5B0C7912F2E99A001AE917 /* GoUctRootFilter.h */,
+				AA5B0C7A12F2E99A001AE917 /* GoUctSearch.cpp */,
+				AA5B0C7B12F2E99A001AE917 /* GoUctSearch.h */,
+				AA5B0C7C12F2E99A001AE917 /* GoUctUtil.cpp */,
+				AA5B0C7D12F2E99A001AE917 /* GoUctUtil.h */,
+			);
+			path = gouct;
+			sourceTree = "<group>";
+		};
+		AA5B0C8312F2E99A001AE917 /* gtpengine */ = {
+			isa = PBXGroup;
+			children = (
+				AA5B0C8412F2E99A001AE917 /* GtpEngine.cpp */,
+				AA5B0C8512F2E99A001AE917 /* GtpEngine.h */,
+				AA5B0C8612F2E99A001AE917 /* GtpInputStream.cpp */,
+				AA5B0C8712F2E99A001AE917 /* GtpInputStream.h */,
+				AA5B0C8812F2E99A001AE917 /* GtpOutputStream.cpp */,
+				AA5B0C8912F2E99A001AE917 /* GtpOutputStream.h */,
+			);
+			path = gtpengine;
+			sourceTree = "<group>";
+		};
+		AA5B0EA812F2E99B001AE917 /* smartgame */ = {
+			isa = PBXGroup;
+			children = (
+				AA5B0EAB12F2E99B001AE917 /* SgArray.h */,
+				AA5B0EAC12F2E99B001AE917 /* SgArrayList.h */,
+				AA5B0EAD12F2E99B001AE917 /* SgBlackWhite.h */,
+				AA5B0EAE12F2E99B001AE917 /* SgBoardColor.h */,
+				AA5B0EAF12F2E99B001AE917 /* SgBoardConst.cpp */,
+				AA5B0EB012F2E99B001AE917 /* SgBoardConst.h */,
+				AA5B0EB112F2E99B001AE917 /* SgBookBuilder.cpp */,
+				AA5B0EB212F2E99B001AE917 /* SgBookBuilder.h */,
+				AA5B0EB312F2E99B001AE917 /* SgBWArray.h */,
+				AA5B0EB412F2E99B001AE917 /* SgBWSet.h */,
+				AA5B0EB512F2E99B001AE917 /* SgCmdLineOpt.cpp */,
+				AA5B0EB612F2E99B001AE917 /* SgCmdLineOpt.h */,
+				AA5B0EB712F2E99B001AE917 /* SgConnCompIterator.cpp */,
+				AA5B0EB812F2E99B001AE917 /* SgConnCompIterator.h */,
+				AA5B0EB912F2E99B001AE917 /* SgDebug.cpp */,
+				AA5B0EBA12F2E99B001AE917 /* SgDebug.h */,
+				AA5B0EBB12F2E99B001AE917 /* SgEBWArray.h */,
+				AA5B0EBC12F2E99B001AE917 /* SgEvaluatedMoves.cpp */,
+				AA5B0EBD12F2E99B001AE917 /* SgEvaluatedMoves.h */,
+				AA5B0EBE12F2E99B001AE917 /* SgException.cpp */,
+				AA5B0EBF12F2E99B001AE917 /* SgException.h */,
+				AA5B0EC012F2E99B001AE917 /* SgFastLog.cpp */,
+				AA5B0EC112F2E99B001AE917 /* SgFastLog.h */,
+				AA5B0EC212F2E99B001AE917 /* SgGameReader.cpp */,
+				AA5B0EC312F2E99B001AE917 /* SgGameReader.h */,
+				AA5B0EC412F2E99B001AE917 /* SgGameWriter.cpp */,
+				AA5B0EC512F2E99B001AE917 /* SgGameWriter.h */,
+				AA5B0EC612F2E99B001AE917 /* SgGtpClient.cpp */,
+				AA5B0EC712F2E99B001AE917 /* SgGtpClient.h */,
+				AA5B0EC812F2E99B001AE917 /* SgGtpCommands.cpp */,
+				AA5B0EC912F2E99B001AE917 /* SgGtpCommands.h */,
+				AA5B0ECA12F2E99B001AE917 /* SgGtpUtil.cpp */,
+				AA5B0ECB12F2E99B001AE917 /* SgGtpUtil.h */,
+				AA5B0ECC12F2E99B001AE917 /* SgHash.h */,
+				AA5B0ECD12F2E99B001AE917 /* SgHashTable.h */,
+				AA5B0ECE12F2E99B001AE917 /* SgIncrementalStack.cpp */,
+				AA5B0ECF12F2E99B001AE917 /* SgIncrementalStack.h */,
+				AA5B0ED012F2E99B001AE917 /* SgInit.cpp */,
+				AA5B0ED112F2E99B001AE917 /* SgInit.h */,
+				AA5B0ED212F2E99B001AE917 /* SgMarker.h */,
+				AA5B0ED312F2E99B001AE917 /* SgMath.h */,
+				AA5B0ED412F2E99B001AE917 /* SgMemCheck.cpp */,
+				AA5B0ED512F2E99B001AE917 /* SgMemCheck.h */,
+				AA5B0ED612F2E99B001AE917 /* SgMiaiMap.cpp */,
+				AA5B0ED712F2E99B001AE917 /* SgMiaiMap.h */,
+				AA5B0ED812F2E99B001AE917 /* SgMiaiStrategy.cpp */,
+				AA5B0ED912F2E99B001AE917 /* SgMiaiStrategy.h */,
+				AA5B0EDA12F2E99B001AE917 /* SgMove.h */,
+				AA5B0EDB12F2E99B001AE917 /* SgMpiSynchronizer.cpp */,
+				AA5B0EDC12F2E99B001AE917 /* SgMpiSynchronizer.h */,
+				AA5B0EDD12F2E99B001AE917 /* SgNbIterator.cpp */,
+				AA5B0EDE12F2E99B001AE917 /* SgNbIterator.h */,
+				AA5B0EDF12F2E99B001AE917 /* SgNode.cpp */,
+				AA5B0EE012F2E99B001AE917 /* SgNode.h */,
+				AA5B0EE112F2E99B001AE917 /* SgNodeUtil.cpp */,
+				AA5B0EE212F2E99B001AE917 /* SgNodeUtil.h */,
+				AA5B0EE312F2E99B001AE917 /* SgPlatform.cpp */,
+				AA5B0EE412F2E99B001AE917 /* SgPlatform.h */,
+				AA5B0EE512F2E99B001AE917 /* SgPoint.cpp */,
+				AA5B0EE612F2E99B001AE917 /* SgPoint.h */,
+				AA5B0EE712F2E99B001AE917 /* SgPointArray.h */,
+				AA5B0EE812F2E99B001AE917 /* SgPointIterator.h */,
+				AA5B0EE912F2E99B001AE917 /* SgPointSet.cpp */,
+				AA5B0EEA12F2E99B001AE917 /* SgPointSet.h */,
+				AA5B0EEB12F2E99B001AE917 /* SgPointSetUtil.cpp */,
+				AA5B0EEC12F2E99B001AE917 /* SgPointSetUtil.h */,
+				AA5B0EED12F2E99B001AE917 /* SgProbCut.cpp */,
+				AA5B0EEE12F2E99B001AE917 /* SgProbCut.h */,
+				AA5B0EEF12F2E99B001AE917 /* SgProcess.cpp */,
+				AA5B0EF012F2E99B001AE917 /* SgProcess.h */,
+				AA5B0EF112F2E99B001AE917 /* SgProp.cpp */,
+				AA5B0EF212F2E99B001AE917 /* SgProp.h */,
+				AA5B0EF312F2E99B001AE917 /* SgRandom.cpp */,
+				AA5B0EF412F2E99B001AE917 /* SgRandom.h */,
+				AA5B0EF512F2E99B001AE917 /* SgRect.cpp */,
+				AA5B0EF612F2E99B001AE917 /* SgRect.h */,
+				AA5B0EF712F2E99B001AE917 /* SgRestorer.h */,
+				AA5B0EF812F2E99B001AE917 /* SgSearch.cpp */,
+				AA5B0EF912F2E99B001AE917 /* SgSearch.h */,
+				AA5B0EFA12F2E99B001AE917 /* SgSearchControl.cpp */,
+				AA5B0EFB12F2E99B001AE917 /* SgSearchControl.h */,
+				AA5B0EFC12F2E99B001AE917 /* SgSearchStatistics.cpp */,
+				AA5B0EFD12F2E99B001AE917 /* SgSearchStatistics.h */,
+				AA5B0EFE12F2E99B001AE917 /* SgSearchTracer.cpp */,
+				AA5B0EFF12F2E99B001AE917 /* SgSearchTracer.h */,
+				AA5B0F0012F2E99B001AE917 /* SgSearchValue.cpp */,
+				AA5B0F0112F2E99B001AE917 /* SgSearchValue.h */,
+				AA5B0F0212F2E99B001AE917 /* SgSortedArray.h */,
+				AA5B0F0312F2E99B001AE917 /* SgSortedMoves.h */,
+				AA5B0F0412F2E99B001AE917 /* SgStack.h */,
+				AA5B0F0512F2E99B001AE917 /* SgStatistics.h */,
+				AA5B0F0612F2E99B001AE917 /* SgStatisticsVlt.h */,
+				AA5B0F0712F2E99B001AE917 /* SgStrategy.cpp */,
+				AA5B0F0812F2E99B001AE917 /* SgStrategy.h */,
+				AA5B0F0912F2E99B001AE917 /* SgStringUtil.cpp */,
+				AA5B0F0A12F2E99B001AE917 /* SgStringUtil.h */,
+				AA5B0F0B12F2E99B001AE917 /* SgSystem.cpp */,
+				AA5B0F0C12F2E99B001AE917 /* SgSystem.h */,
+				AA5B0F0D12F2E99B001AE917 /* SgThreadedWorker.h */,
+				AA5B0F0E12F2E99B001AE917 /* SgTime.cpp */,
+				AA5B0F0F12F2E99B001AE917 /* SgTime.h */,
+				AA5B0F1012F2E99B001AE917 /* SgTimeControl.cpp */,
+				AA5B0F1112F2E99B001AE917 /* SgTimeControl.h */,
+				AA5B0F1212F2E99B001AE917 /* SgTimer.h */,
+				AA5B0F1312F2E99B001AE917 /* SgTimeRecord.cpp */,
+				AA5B0F1412F2E99B001AE917 /* SgTimeRecord.h */,
+				AA5B0F1512F2E99B001AE917 /* SgUctSearch.cpp */,
+				AA5B0F1612F2E99B001AE917 /* SgUctSearch.h */,
+				AA5B0F1712F2E99B001AE917 /* SgUctTree.cpp */,
+				AA5B0F1812F2E99B001AE917 /* SgUctTree.h */,
+				AA5B0F1912F2E99B001AE917 /* SgUctTreeUtil.cpp */,
+				AA5B0F1A12F2E99B001AE917 /* SgUctTreeUtil.h */,
+				AA5B0F1B12F2E99B001AE917 /* SgUctValue.h */,
+				AA5B0F1C12F2E99B001AE917 /* SgUtil.cpp */,
+				AA5B0F1D12F2E99B001AE917 /* SgUtil.h */,
+				AA5B0F1E12F2E99B001AE917 /* SgVector.h */,
+				AA5B0F1F12F2E99B001AE917 /* SgVectorUtil.cpp */,
+				AA5B0F2012F2E99B001AE917 /* SgVectorUtil.h */,
+				AA5B0F2112F2E99B001AE917 /* SgWrite.cpp */,
+				AA5B0F2212F2E99B001AE917 /* SgWrite.h */,
+			);
+			path = smartgame;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* Fuego */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Fuego" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Fuego;
+			productName = Go;
+			productReference = 1D6058910D05DD3D006BFB54 /* Fuego.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Horace Ho";
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Fuego" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* Fuego */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
+				AA802BFE12F27C1A00DB5E03 /* GoEngineViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* GoAppDelegate.mm in Sources */,
+				AA802BFD12F27C1A00DB5E03 /* GoEngineViewController.mm in Sources */,
+				AA5B0F8E12F2E99B001AE917 /* FuegoMainEngine.cpp in Sources */,
+				AA5B0F8F12F2E99B001AE917 /* FuegoMainUtil.cpp in Sources */,
+				AA5B0F9612F2E99B001AE917 /* GoAutoBook.cpp in Sources */,
+				AA5B0F9712F2E99B001AE917 /* GoBensonSolver.cpp in Sources */,
+				AA5B0F9812F2E99B001AE917 /* GoBlock.cpp in Sources */,
+				AA5B0F9912F2E99B001AE917 /* GoBoard.cpp in Sources */,
+				AA5B0F9A12F2E99B001AE917 /* GoBoardCheckPerformance.cpp in Sources */,
+				AA5B0F9B12F2E99B001AE917 /* GoBoardHistory.cpp in Sources */,
+				AA5B0F9C12F2E99B001AE917 /* GoBoardRestorer.cpp in Sources */,
+				AA5B0F9D12F2E99B001AE917 /* GoBoardSynchronizer.cpp in Sources */,
+				AA5B0F9E12F2E99B001AE917 /* GoBoardUpdater.cpp in Sources */,
+				AA5B0F9F12F2E99B001AE917 /* GoBoardUtil.cpp in Sources */,
+				AA5B0FA012F2E99B001AE917 /* GoBook.cpp in Sources */,
+				AA5B0FA112F2E99B001AE917 /* GoChain.cpp in Sources */,
+				AA5B0FA212F2E99B001AE917 /* GoEyeCount.cpp in Sources */,
+				AA5B0FA312F2E99B001AE917 /* GoEyeUtil.cpp in Sources */,
+				AA5B0FA412F2E99B001AE917 /* GoGame.cpp in Sources */,
+				AA5B0FA512F2E99B001AE917 /* GoGtpCommandUtil.cpp in Sources */,
+				AA5B0FA612F2E99B001AE917 /* GoGtpEngine.cpp in Sources */,
+				AA5B0FA712F2E99B001AE917 /* GoGtpExtraCommands.cpp in Sources */,
+				AA5B0FA812F2E99B001AE917 /* GoInfluence.cpp in Sources */,
+				AA5B0FA912F2E99B001AE917 /* GoInit.cpp in Sources */,
+				AA5B0FAA12F2E99B001AE917 /* GoKomi.cpp in Sources */,
+				AA5B0FAB12F2E99B001AE917 /* GoLadder.cpp in Sources */,
+				AA5B0FAC12F2E99B001AE917 /* GoMotive.cpp in Sources */,
+				AA5B0FAD12F2E99B001AE917 /* GoNodeUtil.cpp in Sources */,
+				AA5B0FAE12F2E99B001AE917 /* GoPlayer.cpp in Sources */,
+				AA5B0FAF12F2E99B001AE917 /* GoPlayerMove.cpp in Sources */,
+				AA5B0FB012F2E99B001AE917 /* GoRegion.cpp in Sources */,
+				AA5B0FB112F2E99B001AE917 /* GoRegionBoard.cpp in Sources */,
+				AA5B0FB212F2E99B001AE917 /* GoRegionUtil.cpp in Sources */,
+				AA5B0FB312F2E99B001AE917 /* GoRules.cpp in Sources */,
+				AA5B0FB412F2E99B001AE917 /* GoSafetyCommands.cpp in Sources */,
+				AA5B0FB512F2E99B001AE917 /* GoSafetySolver.cpp in Sources */,
+				AA5B0FB612F2E99B001AE917 /* GoSafetyUtil.cpp in Sources */,
+				AA5B0FB712F2E99B001AE917 /* GoSearch.cpp in Sources */,
+				AA5B0FB812F2E99B001AE917 /* GoSetupUtil.cpp in Sources */,
+				AA5B0FB912F2E99B001AE917 /* GoStaticLadder.cpp in Sources */,
+				AA5B0FBA12F2E99B001AE917 /* GoStaticSafetySolver.cpp in Sources */,
+				AA5B0FBB12F2E99B001AE917 /* GoTimeControl.cpp in Sources */,
+				AA5B0FBC12F2E99B001AE917 /* GoTimeSettings.cpp in Sources */,
+				AA5B0FBD12F2E99B001AE917 /* GoUtil.cpp in Sources */,
+				AA5B0FD112F2E99B001AE917 /* GoUctBoard.cpp in Sources */,
+				AA5B0FD212F2E99B001AE917 /* GoUctCommands.cpp in Sources */,
+				AA5B0FD312F2E99B001AE917 /* GoUctDefaultPriorKnowledge.cpp in Sources */,
+				AA5B0FD412F2E99B001AE917 /* GoUctDefaultRootFilter.cpp in Sources */,
+				AA5B0FD512F2E99B001AE917 /* GoUctEstimatorStat.cpp in Sources */,
+				AA5B0FD612F2E99B001AE917 /* GoUctGlobalSearch.cpp in Sources */,
+				AA5B0FD712F2E99B001AE917 /* GoUctObjectWithSearch.cpp in Sources */,
+				AA5B0FD812F2E99B001AE917 /* GoUctPlayoutPolicy.cpp in Sources */,
+				AA5B0FD912F2E99B001AE917 /* GoUctRootFilter.cpp in Sources */,
+				AA5B0FDA12F2E99B001AE917 /* GoUctSearch.cpp in Sources */,
+				AA5B0FDB12F2E99B001AE917 /* GoUctUtil.cpp in Sources */,
+				AA5B0FE012F2E99B001AE917 /* GtpEngine.cpp in Sources */,
+				AA5B0FE112F2E99B001AE917 /* GtpInputStream.cpp in Sources */,
+				AA5B0FE212F2E99B001AE917 /* GtpOutputStream.cpp in Sources */,
+				AA5B11B812F2E99B001AE917 /* SgBoardConst.cpp in Sources */,
+				AA5B11B912F2E99B001AE917 /* SgBookBuilder.cpp in Sources */,
+				AA5B11BA12F2E99B001AE917 /* SgCmdLineOpt.cpp in Sources */,
+				AA5B11BB12F2E99B001AE917 /* SgConnCompIterator.cpp in Sources */,
+				AA5B11BC12F2E99B001AE917 /* SgDebug.cpp in Sources */,
+				AA5B11BD12F2E99B001AE917 /* SgEvaluatedMoves.cpp in Sources */,
+				AA5B11BE12F2E99B001AE917 /* SgException.cpp in Sources */,
+				AA5B11BF12F2E99B001AE917 /* SgFastLog.cpp in Sources */,
+				AA5B11C012F2E99B001AE917 /* SgGameReader.cpp in Sources */,
+				AA5B11C112F2E99B001AE917 /* SgGameWriter.cpp in Sources */,
+				AA5B11C212F2E99B001AE917 /* SgGtpClient.cpp in Sources */,
+				AA5B11C312F2E99B001AE917 /* SgGtpCommands.cpp in Sources */,
+				AA5B11C412F2E99B001AE917 /* SgGtpUtil.cpp in Sources */,
+				AA5B11C512F2E99B001AE917 /* SgIncrementalStack.cpp in Sources */,
+				AA5B11C612F2E99B001AE917 /* SgInit.cpp in Sources */,
+				AA5B11C712F2E99B001AE917 /* SgMemCheck.cpp in Sources */,
+				AA5B11C812F2E99B001AE917 /* SgMiaiMap.cpp in Sources */,
+				AA5B11C912F2E99B001AE917 /* SgMiaiStrategy.cpp in Sources */,
+				AA5B11CA12F2E99B001AE917 /* SgMpiSynchronizer.cpp in Sources */,
+				AA5B11CB12F2E99B001AE917 /* SgNbIterator.cpp in Sources */,
+				AA5B11CC12F2E99B001AE917 /* SgNode.cpp in Sources */,
+				AA5B11CD12F2E99B001AE917 /* SgNodeUtil.cpp in Sources */,
+				AA5B11CE12F2E99B001AE917 /* SgPlatform.cpp in Sources */,
+				AA5B11CF12F2E99B001AE917 /* SgPoint.cpp in Sources */,
+				AA5B11D012F2E99B001AE917 /* SgPointSet.cpp in Sources */,
+				AA5B11D112F2E99B001AE917 /* SgPointSetUtil.cpp in Sources */,
+				AA5B11D212F2E99B001AE917 /* SgProbCut.cpp in Sources */,
+				AA5B11D312F2E99B001AE917 /* SgProcess.cpp in Sources */,
+				AA5B11D412F2E99B001AE917 /* SgProp.cpp in Sources */,
+				AA5B11D512F2E99B001AE917 /* SgRandom.cpp in Sources */,
+				AA5B11D612F2E99B001AE917 /* SgRect.cpp in Sources */,
+				AA5B11D712F2E99B001AE917 /* SgSearch.cpp in Sources */,
+				AA5B11D812F2E99B001AE917 /* SgSearchControl.cpp in Sources */,
+				AA5B11D912F2E99B001AE917 /* SgSearchStatistics.cpp in Sources */,
+				AA5B11DA12F2E99B001AE917 /* SgSearchTracer.cpp in Sources */,
+				AA5B11DB12F2E99B001AE917 /* SgSearchValue.cpp in Sources */,
+				AA5B11DC12F2E99B001AE917 /* SgStrategy.cpp in Sources */,
+				AA5B11DD12F2E99B001AE917 /* SgStringUtil.cpp in Sources */,
+				AA5B11DE12F2E99B001AE917 /* SgSystem.cpp in Sources */,
+				AA5B11DF12F2E99B001AE917 /* SgTime.cpp in Sources */,
+				AA5B11E012F2E99B001AE917 /* SgTimeControl.cpp in Sources */,
+				AA5B11E112F2E99B001AE917 /* SgTimeRecord.cpp in Sources */,
+				AA5B11E212F2E99B001AE917 /* SgUctSearch.cpp in Sources */,
+				AA5B11E312F2E99B001AE917 /* SgUctTree.cpp in Sources */,
+				AA5B11E412F2E99B001AE917 /* SgUctTreeUtil.cpp in Sources */,
+				AA5B11E512F2E99B001AE917 /* SgUtil.cpp in Sources */,
+				AA5B11E612F2E99B001AE917 /* SgVectorUtil.cpp in Sources */,
+				AA5B11E712F2E99B001AE917 /* SgWrite.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../Framework\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Fuego_Prefix.pch;
+				INFOPLIST_FILE = "Fuego-Info.plist";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_NAME = Fuego;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../Framework\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Fuego_Prefix.pch;
+				INFOPLIST_FILE = "Fuego-Info.plist";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_NAME = Fuego;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_PREPROCESSOR_DEFINITIONS = "HOST_CPU='\"APPLE_A4\"'";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_LDFLAGS = "";
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_PREPROCESSOR_DEFINITIONS = "HOST_CPU='\"APPLE_A4\"'";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_LDFLAGS = "";
+				PREBINDING = NO;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Fuego" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Fuego" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
